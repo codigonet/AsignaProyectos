@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   def new
+    @personas = Persona.all
     @project = Project.new
   end
 
